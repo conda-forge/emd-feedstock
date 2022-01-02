@@ -1,5 +1,5 @@
 {% set name = "emd" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emd-{{ version }}.tar.gz
-  sha256: 6542be5134944af23ee3ddbcefd77905b87a513d8113fd450716fb5586d7ec80
+  sha256: 96a02ceacf055259e8f9df70d5840daed6fce97465aa2cee8b0a357ef6e2f610
 
 build:
   number: 0
@@ -21,14 +21,13 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
-    - matplotlib-base
-    - numpy
-    - numpydoc
-    - pandas
-    - pytest
-    - pyyaml
+    - numpy<1.21,>=1.17
     - scipy
-    - sphinx_rtd_theme
+    - matplotlib-base
+    - pandas
+    - pyyaml>=5.1
+    - sparse
+    - joblib
 
 test:
   imports:
