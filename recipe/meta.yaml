@@ -1,5 +1,5 @@
 {% set name = "emd" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emd-{{ version }}.tar.gz
-  sha256: 96a02ceacf055259e8f9df70d5840daed6fce97465aa2cee8b0a357ef6e2f610
+  sha256: 97a518dfffb419d28fa9d8942c2ab23dd4cfccd0fce0c4d2cdb6df902aaa631c
 
 build:
   number: 0
@@ -40,7 +40,7 @@ test:
 about:
   home: https://pypi.org/project/emd/
   summary: Empirical Mode Decomposition
-  license:  GPL-3.0-or-later
+  license: GPL-3.0-or-later
   license_file: LICENSE.txt
   description: Empirical Mode Decomposition tools in Python
   dev_url: https://gitlab.com/emd-dev/emd
