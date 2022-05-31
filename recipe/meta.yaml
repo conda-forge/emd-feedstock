@@ -28,6 +28,8 @@ requirements:
     - pyyaml >=5.1
     - sparse
     - joblib
+    - tabulate
+    - dcor
 
 test:
   imports:
