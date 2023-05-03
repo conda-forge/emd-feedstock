@@ -1,11 +1,11 @@
-About emd
-=========
+About emd-feedstock
+===================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/emd-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/emd/
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/emd-feedstock/blob/main/LICENSE.txt)
 
 Summary: Empirical Mode Decomposition
 
@@ -150,4 +150,5 @@ Feedstock Maintainers
 =====================
 
 * [@ajquinn](https://github.com/ajquinn/)
+* [@larsoner](https://github.com/larsoner/)
 
