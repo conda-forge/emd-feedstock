@@ -1,5 +1,5 @@
 {% set name = "emd" %}
-{% set version = "0.5.5" %}
+{% set version = "0.6.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emd-{{ version }}.tar.gz
-  sha256: f44a1871c72a0599f6197fef08de61cf3742ce49d134e505852c1a6b24d13966
+  sha256: c50ee966f45b6098dd6c704ad25caca33abd9879264318257a43407786f6289c
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
