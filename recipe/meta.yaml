@@ -1,5 +1,5 @@
 {% set name = "emd" %}
-{% set version = "0.5.5" %}
+{% set version = "0.6.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emd-{{ version }}.tar.gz
-  sha256: f44a1871c72a0599f6197fef08de61cf3742ce49d134e505852c1a6b24d13966
+  sha256: 38682f72adf7c406b7fc87316659fd159450b1dd946d48666deb893ef92c1fdc
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
-    - numpy <1.22,>=1.17
+    - numpy >=1.19.3
     - scipy
     - matplotlib-base
     - pandas
@@ -51,3 +51,4 @@ about:
 extra:
   recipe-maintainers:
     - ajquinn
+    - larsoner
