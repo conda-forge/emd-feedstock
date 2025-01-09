@@ -17,10 +17,11 @@ build:
 
 requirements:
   host:
+    - python {{ python_min }}
     - pip
-    - python >=3.6
+    - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy >=1.19.3
     - scipy
     - matplotlib-base
@@ -37,6 +38,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
