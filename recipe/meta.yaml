@@ -1,5 +1,5 @@
 {% set name = "emd" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emd-{{ version }}.tar.gz
-  sha256: 8fa9a1e7247aed0dc144633b1b2f2a8054f729a6d10ff7c8129321682bd18447
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/emd-{{ version }}.tar.gz
+  sha256: bd5e5fe6bf3bd11fb7d2429bd3671b74804d715d76f64e9d451e40125b5dd6b6
 
 build:
   number: 0
@@ -17,10 +17,12 @@ build:
 
 requirements:
   host:
+    - python {{ python_min }}
     - pip
-    - python >=3.6
+    - hatchling
+    - hatch-vcs
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy >=1.19.3
     - scipy
     - matplotlib-base
@@ -36,7 +38,9 @@ test:
     - emd
   commands:
     - pip check
+    - python -c "import emd; assert emd.__version__ == '{{ version }}', emd.__version__"
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
