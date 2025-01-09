@@ -38,6 +38,7 @@ test:
     - emd
   commands:
     - pip check
+    - python -c "import emd; assert emd.__version__ == '{{ version }}', emd.__version__"
   requires:
     - python {{ python_min }}
     - pip
